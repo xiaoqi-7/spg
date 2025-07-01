@@ -28,7 +28,7 @@ There are three files in the `data` folder: <br>
 
   ```
   3    (there are total 3 queries)
-  1 3  (a query: return top 3 nearest neighbors for query vertex 1)
+  1 3  (a query: return shortest path graph between vertex 1 and vertex 3)
   2 2
   3 4
 
