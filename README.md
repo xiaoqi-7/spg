@@ -37,7 +37,7 @@ There are three files in the `data` folder: <br>
 * compile predata.cpp for preprocessing the raw graph data <br>
   `g++ -std=c++11 -O3 preprocessdata.cpp -o pre`
   
-* compile index_bng.cpp for building CBV-SDP-Index for the original graph and querying test <br>
+* compile index_bng.cpp for building CBV-SDP-Index for the original graph and doing query test <br>
   `g++ -std=c++11 -O3 cbvsdpindex_query.cpp -o cbv`
   
   
