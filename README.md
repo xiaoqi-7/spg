@@ -38,11 +38,9 @@ There are three files in the `data` folder: <br>
 * compile predata.cpp for preprocessing the raw graph data <br>
   `g++ -std=c++11 -O3 preprocessdata.cpp -o pre`
   
-* compile index_bng.cpp for building bridge neighbor preserved graph for the original graph <br>
-  `g++ -std=c++11 -O3 index_bng.cpp -o bng`
+* compile index_bng.cpp for building CBV-SDP-Index for the original graph and querying test <br>
+  `g++ -std=c++11 -O3 cbvsdpindex.cpp -o cbv`
   
-* compile query_up.cpp for knn-index construction, knn queries and updating objects <br>
-  `g++ -std=c++11 -O3 query_up.cpp -o qu`
   
 ### Test
 * Preprocess raw graph data from [DIMACS](http://www.diag.uniroma1.it/~challenge9/download.shtml) <br>
@@ -52,31 +50,12 @@ There are three files in the `data` folder: <br>
   
   eg: `./pre data/USA-road-d.NY.gr data/NY.data` <br>
   
-* construct bridge neighbor graph <br>
-  `./pre origraph bng`  <br>
+* construct CBV-SDP-Index and do query test <br>
+  `./cbv origraph query.data number`  <br>
   * `origraph`: the file path to a data file, containing the original graph data <br>
-  * `bng`: the file path to the data file, storing the bridge neighbor graph <br>
+  * `query.data`: the file path to the data file, storing the query vertices <br>
+  * `number`: the number of pairs of query vertices <br>
   
-  eg: `./bng data/NY.data data/NY.idx` 
- 
-* construct knn-index, query and update obejcts <br>
-  `./qu bng objset -X XF alg topk`
-  
-  * construct knn-index and query <br>
-    `./qu data/NY.idx data/NY.object -q data/NY.qu opt 40`
-    
-  * update for inserting objects into a set of candidate objects <br>
-    `./qu data/NY.idx data/NY.object -u data/NY.in opt 40`
-    
-  * update for deleting objects from a set of candidate objects <br>
-    `./qu data/NY.idx data/NY.object -u data/NY.de opt 40`
-
-* Arguments
-  * `bng`: the file path to the bridge neighbor graph
-  * `objset`: the file path to the object file
-  * `-X`: `-q` denotes to query, `-u` denotes to update objects
-  * `XF`: the file path to queries document or the path to updates document
-  * `alg`: choose a knn-index construction algo, `pri` represents our primary bottom-up computing-sharing algorithm (alg 2 in our paper), `opt` represents our optimized bidirectional construction algorihtm (alg 3 in our paper).
-  * `topk`: the paramter for $k$ in the top $k$ nearesr neighbor search 
+  eg: `./cbv data/NY.data data/NY.qu 10000` 
 
 
