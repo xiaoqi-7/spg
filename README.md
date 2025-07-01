@@ -38,7 +38,7 @@ There are three files in the `data` folder: <br>
   `g++ -std=c++11 -O3 preprocessdata.cpp -o pre`
   
 * compile index_bng.cpp for building CBV-SDP-Index for the original graph and querying test <br>
-  `g++ -std=c++11 -O3 cbvsdpindex.cpp -o cbv`
+  `g++ -std=c++11 -O3 cbvsdpindex_query.cpp -o cbv`
   
   
 ### Test
