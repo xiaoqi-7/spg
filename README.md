@@ -1,7 +1,6 @@
 # spg
-shortest path graph search on large scale road networks
 
-This project implements the KNN algorithms for the following paper:
+This project implements the shortest path graph search algorithms for the following paper:
 * Yiqi Wang, Long Yuan,  Wenjie Zhang, Zi Chen, Xuemin Lin, Qingqiang Sun, "Towards Efficient Shortest Path Graph Search on Large Road Networks", which is submitted to VLDB2026.
 
 ### Running Environment
