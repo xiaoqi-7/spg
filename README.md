@@ -1,13 +1,13 @@
-# spg
+# Shortest Path Graph Search
 
-This project implements the shortest path graph search algorithm for the following paper:
+This project involves the development, implementation, testing, and optimisation of software system supporting shortest path search functionality based on the technical methods described in the following publication:
 * Yiqi Wang, Long Yuan,  Wenjie Zhang, Zi Chen, Xuemin Lin, Qingqiang Sun, "Towards Efficient Shortest Path Graph Search on Large Road Networks", which is submitted to VLDB2026.
 
 ### Running Environment
 
 All experiments were conducted on a Linux machine with an Intel Xeon CPU and 384GB of memory, Debian GNU/Linux 12 and the g++ version is 12.2.0. We have implemented all methods using the C++11 standard and turned on the O3 optimization flag.
 
-### Dataset
+### Testing Dataset
 
 All the datasets in this paper can be downloaded from [DIMACS](http://www.diag.uniroma1.it/~challenge9/download.shtml) 
 
