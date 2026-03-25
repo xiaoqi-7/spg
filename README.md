@@ -3,9 +3,13 @@
 This project involves the development, implementation, testing, and optimisation of software system supporting shortest path search functionality based on the technical methods described in the following publication:
 * Yiqi Wang, Long Yuan,  Wenjie Zhang, Zi Chen, Xuemin Lin, Qingqiang Sun, "Towards Efficient Shortest Path Graph Search on Large Road Networks", which is submitted to VLDB2026.
 
-### Running Environment
+### Technical Environment
 
-All experiments were conducted on a Linux machine with an Intel Xeon CPU and 384GB of memory, Debian GNU/Linux 12 and the g++ version is 12.2.0. We have implemented all methods using the C++11 standard and turned on the O3 optimization flag.
+The software was developed and tested in a Linux-based environment using an Intel Xeon CPU, 384 GB of memory, Debian GNU/Linux 12, and g++ 12.2.0. The system was implemented in C++11 with compiler optimisation enabled using the -O3 flag.
+
+### Development and Validation
+
+Development work included backend software development, implementation of processing functions, execution testing, performance tuning, and validation of system outputs. This work resulted in a functional software system that can be used by other technical users to perform shortest path search tasks on large road network datasets.
 
 ### Testing Dataset
 
