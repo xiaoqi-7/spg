@@ -1,4 +1,4 @@
-# Shortest Path Graph Search
+# Shortest Path Graph Search System
 
 This project involves the development, implementation, testing, and optimisation of software system supporting shortest path search functionality based on the technical methods described in the following publication:
 * Yiqi Wang, Long Yuan,  Wenjie Zhang, Zi Chen, Xuemin Lin, Qingqiang Sun, "Towards Efficient Shortest Path Graph Search on Large Road Networks", which is submitted to VLDB2026.
